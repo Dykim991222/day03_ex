@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px; 
+            height: 100px;
+            border: 1px solid red;
+            padding: 10px;
+        }
+        #box1{
+            /* default -> border? padding? 얘네둘은 포함 x */
+            box-sizing: content-box;
+            /* 패딩이 더해지는거  */
+        }
+        #box2{
+            /* border와 padding도 포함하는 옵션도 존재해? */
+            box-sizing: border-box;
+            /* 전체를 일단 width,height 고정, 그리고 나머지 조절  */
+        }
+        /* 마진병합과 em rem 차이, borderbox, contentbox 차이 틸로 정리.  */
+    </style>
+</head>
+<body>
+    <!-- div#box1+div#box2 -->
+     <div id="box1"></div>
+     <div id="box2"></div>
+</body>
+</html>

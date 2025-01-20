@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /* 계산한거랑 미묘하게 다르게 나옴. 기본적으로 하고 나와야 편함 */
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            background-color : cyan;
+            /* content 내부 */
+            width: 200px;
+            height: 200px;
+            /* padding 외부 */
+            padding: 20px;
+            /* border */
+            border: 1px solid black;
+            /* margin 서로 상대적으로 큰쪽만이 살아남음, 마진병합 */
+            margin: 20px;
+        }
+        #box1 {
+            margin-bottom: 40px;
+        }
+        #box2 {
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.box -->
+     <div class="box" id="box1">첫번째 박스</div>
+     <div class="box" id="box2">두번째 박스</div>
+</body>
+</html>

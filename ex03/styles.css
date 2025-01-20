@@ -1,0 +1,11 @@
+li {
+    color : orange;
+    font-size:15px;
+}
+ol li{
+    color : green;
+}
+ol li{
+    /* 여기서도 주석은 command + shift */
+    color : blue;
+}
